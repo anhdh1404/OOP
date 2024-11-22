@@ -10,7 +10,7 @@ public class Cart {
     //Hàm thêm đĩa DVD vào giỏ hàng
     public int addDigitalVideoDisc(DigitalVideoDisc disc) {
         if (qtyOrdered == MAX_NUMBERS_ORDERED) {
-            System.out.println("The cart is almost full. Can't add more díc");
+            System.out.println("The cart is almost full. Can't add more disc");
             return 0;
         } else {
             itemsOrdered[qtyOrdered] = disc;

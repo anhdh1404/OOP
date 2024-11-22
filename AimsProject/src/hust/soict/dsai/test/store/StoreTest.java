@@ -2,7 +2,7 @@ package hust.soict.dsai.test.store;
 import hust.soict.dsai.aims.disc.DigitalVideoDisc;
 import hust.soict.dsai.aims.store.Store;
 
-public class StoreTest {
+class StoreTest {
     public static void main(String[] args) {
         Store store = new Store();
         
@@ -15,10 +15,14 @@ public class StoreTest {
         DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
         store.addDVD(dvd3);
 
-        System.out.println(store); // In toàn bộ danh sách DVD trong cửa hàng
-        store.removeDVD(dvd2);     // Xóa DVD "Star Wars"
-        System.out.println(store); // In lại danh sách sau khi xóa
-       
+        System.out.println(store.toString());
+        
+        
+        store.removeDVD(dvd1);;
+        store.removeDVD(dvd2);
+        store.removeDVD(dvd3);
+        
+        System.out.println(store.toString()); 
     }
 
 }
